@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        tools:context=".ViewRecipe">
+<!--
+        <TextView
+            android:id="@+id/RecipeNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/recipe_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+            -->
+
+
+        <TextView
+            android:id="@+id/RecipeNameInput"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/recipe_name"
+            android:maxLength="30"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/RecipeDescriptionView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeNameInput" />
+
+
+        <TextView
+            android:id="@+id/RecipeDescriptionInput"
+            android:layout_width="362dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/description"
+            android:lines="6"
+            android:maxLength="200"
+            android:maxLines="6"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionView" />
+
+        <TextView
+            android:id="@+id/IngredientListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="Ingredient List:"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionInput" />
+
+
+        <TextView
+            android:id="@+id/IngredientInput"
+            android:layout_width="361dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="212dp"
+            android:ems="10"
+            android:hint="@string/description"
+            android:lines="6"
+            android:maxLength="200"
+            android:maxLines="6"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionView" />
+
+        <TextView
+            android:id="@+id/RatingView"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/rating"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionInput" />
+
+        <TextView
+            android:id="@+id/from100"
+            android:layout_width="59dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/_5"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/RatingInput"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionInput" />
+
+        <EditText
+            android:id="@+id/RatingInput"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:maxLength="4"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/RatingView"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDescriptionInput" />
+
+
+        <Button
+            android:id="@+id/ViewVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="ViewVideo"
+            android:text="ViewVideo"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IngredientInput" />
+
+        <TextView
+            android:id="@+id/VideoText"
+            android:layout_width="315dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="95dp"
+            android:text="VideoTitle"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IngredientInput" />
+
+            <Button
+                android:id="@+id/SaveRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:onClick="UpdateRating"
+                android:text="Save Rating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.449"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ViewVideo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
