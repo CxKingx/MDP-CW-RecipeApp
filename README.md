@@ -2,6 +2,17 @@ Made by Kevin Ferdinand 20125628 for MDP CW2 2022
 Tested in VM : Pixel 2 API 29 Android ver 10
 Tested in Physical Machine : Samsung A52S with API 31 Android ver 12
 
+This is a recipe app for Coursework about saving recipes
+
+![alttext](images/Main.png "Main")
+
+![alttext](images/newrecipe.png "newrecipe")
+
+![alttext](images/viewrecipe.png "viewrecipe")
+
+![alttext](images/viewvideo.png "viewvideo")
+
+
 Refenreces:
 Most of the functions in CW1
 https://www.javatpoint.com/java-sqlite
