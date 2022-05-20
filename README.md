@@ -1,6 +1,6 @@
-Made by Kevin Ferdinand 20125628 for MDP CW2 2022
-Tested in VM : Pixel 2 API 29 Android ver 10
-Tested in Physical Machine : Samsung A52S with API 31 Android ver 12
+# Made by Kevin Ferdinand 20125628 for MDP CW2 2022
+## Tested in VM : Pixel 2 API 29 Android ver 10
+## Tested in Physical Machine : Samsung A52S with API 31 Android ver 12
 
 This is a recipe app for Coursework about saving recipes
 
